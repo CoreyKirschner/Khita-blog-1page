@@ -1,0 +1,77 @@
+.contact-section {
+	position: relative;
+    background-color: black;
+    color: white;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+}
+
+header {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+::placeholder {
+	color: white;
+}
+
+#msg {
+	height: 280px;
+	resize: none;
+	font-family: sans-serif;
+}
+
+.form-submit-btn {
+	background: rgb(39, 18, 18);
+	color: white;
+	text-transform: capitalize;
+	padding: 15px 40px;
+	display: block;
+	margin: auto;
+	border: 1px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.map {
+	width: 100%;
+	height: 80%;
+	padding: 10px;
+	border: 2px solid white;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}

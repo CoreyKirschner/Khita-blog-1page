@@ -1,0 +1,35 @@
+/* photospage.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    max-width: 800px; /* Adjust the max width as needed */
+    text-align: center;
+}
+
+.photo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Set the dimensions for each photo */
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+}
+
