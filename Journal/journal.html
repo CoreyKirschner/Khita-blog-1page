@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal Page</title>
     <link rel="stylesheet" type="text/css" href="journal.css">
 </head>
@@ -9,10 +11,13 @@
         <header>
             <h1>Journal</h1>
         </header>
-        <div class="journal-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum tortor nec sapien tincidunt, eget interdum elit lacinia.</p>
+        <div class="journal-content" id="posts-container"></div>
+        <div id="post-form">
+            <input type="text" id="post-title" placeholder="Enter title">
+            <textarea id="post-content" placeholder="Write your journal entry..."></textarea>
+            <button onclick="addPost()">Add Post</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="journal.js"></script>
 </body>
 </html>
