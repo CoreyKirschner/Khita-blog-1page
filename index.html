@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khita</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="main-container">
-        <header>
-            <h1>Khita</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="Journal/journal.html">Journal</a></li>
-                <li><a href="PhotosPage/photospage.html">Photos</a></li>
-                <li><a href="AboutMe/aboutme.html">About Me</a></li>
-                <li><a href="Contact/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Main Section-->
+    <div id="section1" class="section">
+        <div class="main-container">
+            <header>
+                <h1>Khita</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#section2">Journal</a></li>
+                    <li><a href="#section3">Photos</a></li>
+                    <li><a href="#section2">About Me</a></li>
+                    <li><a href="#section2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+    <!-- Journal Section -->
+    <div id="section2" class="section">
+        <div class="journal-container">
+            <header>
+                <h1>Journal</h1>
+            </header>
+            <div class="journal-content" id="posts-container"></div>
+            <div id="post-form">
+                <input type="text" id="post-title" placeholder="Enter title">
+                <textarea id="post-content" placeholder="Write your journal entry..."></textarea>
+                <button onclick="addPost()">Add Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photos Page Section -->
+    <header class="photos-header">Photos</header>
+    <div id="section3" class="section">
+        <div class="photos-container">
+            <div class="photo">
+                <img src="img/Khita.jpeg" alt="Photo 1">
+            </div>
+            <div class="photo">
+                <img src="img/Khita2.jpeg" alt="clock">
+            </div>
+            <div class="photo">
+                <img src="img/Khita3.jpeg" alt="Photo 3">
+            </div>
+            <div class="photo">
+                <img src="img/Khita4.jpeg" alt="Photo 4">
+            </div>
+
+        <!-- Bottom Row -->
+            <div class="photo">
+                <img src="img/Khita5.jpeg" alt="Photo 5">
+            </div>
+            <div class="photo">
+                <img src="img/Khita6.jpeg" alt="Photo 6">
+            </div>
+            <div class="photo">
+                <img src="img/Khita7.jpeg" alt="Photo 7">
+            </div>
+            <div class="photo">
+                <img src="img/Khita8.jpeg" alt="Photo 8">
+            </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
