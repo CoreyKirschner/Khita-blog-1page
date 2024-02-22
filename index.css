@@ -19,7 +19,27 @@ body {
     background-color: white;
     overflow-y: auto;
     min-height: 100vh;
+    position: relative;
 }
+
+#section1 {
+    position: relative;
+    background-image: url('img/dark-forest.webp'); /* Set the path to your image */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the gradient as needed */
+}
+
 
 #section1 header {
     font-size: 40px;
@@ -47,6 +67,33 @@ body {
     text-align: right;
 }
 
+/* Login CSS __________________________*/
+
+.login-form {
+    position: absolute;
+    top: 74%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label,
+  .login-form input,
+  .login-form button {
+    display: block;
+    margin: 10px 0;
+  }
+
 /* Journal CSS __________________________*/
 
 .journal-container {
@@ -63,6 +110,8 @@ body {
 #section2 header {
     font-size: 36px;
     text-align: center;
+    font-family: Snell Roundhand, cursive;
+    letter-spacing: 3px;
 }
 
 .journal-content {
@@ -99,11 +148,11 @@ body {
     gap: 40px;
     font-family: Arial, sans-serif;
     padding: 0;
-    background-color: #f0f0f0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin-top: 10px;
+    background: linear-gradient(to bottom,#000000,  #F9629F, #000000);
 }
 
 .photo {
@@ -124,5 +173,143 @@ body {
     margin-top: 10px;
     color: white;
     text-align: center;
-    font-size: 36px;
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* About Me CSS __________________________*/
+
+.about-me-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to top, #F9629F, #000000);
+}
+
+.about-me-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.about-me-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-header {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.about-me-text {
+    margin-top: 10px;
+    color: white;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* Contact CSS __________________________*/
+
+.contact-section {
+    position: relative;
+    /* background-color: black; */
+    color: white;
+    padding: 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    background: linear-gradient(to bottom, #F9629F, #000000);
+    border-top: 2px solid white;
+}
+
+.contact-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    grid-column: span 3; /* Span three columns for full width */
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.contact-info {
+    text-align: center;
+    grid-column: span 1;
+}
+
+.contact-h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 100px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.contact-form textarea {
+    width: 106%;
+    height: 230px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+::placeholder {
+    color: white;
+}
+
+.form-submit-btn {
+    background: rgb(39, 18, 18);
+    color: white;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.map {
+    width: 100%;
+    height: 450px; /* Adjusted height for the map container */
+    padding: 10px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    grid-column: span 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
